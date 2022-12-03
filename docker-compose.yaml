@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  backend_go:
+    container_name: backend_go
+    build:
+      context: backend_go
+      dockerfile: Dockerfile
+    privileged: true
+    volumes:
+      - ./backend_go/public:/app/public
+    ports:
+      - "8080:8080"
+  web:
+    container_name: web
+    build:
+      context: web
+      dockerfile: Dockerfile
+    privileged: true
+    ports:
+      - "5173:5173"
