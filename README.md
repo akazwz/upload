@@ -18,5 +18,5 @@
 
 # 预览
 
-1. 打开 http://localhost:5173/ ，可以多个上传文件或者文件见
+1. 打开 http://localhost:5173/ , 可以多个上传文件或者文件夹
 2. 在 backend_go/public 即可看到自己上传的文件以及文件夹
